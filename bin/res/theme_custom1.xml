@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme 
+    id="theme_custom1" 
+    parent="theme_default"
+    fontSize="24"
+    >
+</theme>

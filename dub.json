@@ -1,0 +1,38 @@
+{
+    "name": "fish",
+    "description": "fish",
+    "license": "Boost",
+    "authors": ["timepp"],
+
+    "targetPath": "bin",
+    "targetType": "executable",
+    "targetName": "fish",
+
+    "stringImportPaths": ["views", "views/res", "views/res/i18n", "views/res/mdpi"],
+
+    "sourceFiles-windows": ["$PACKAGE_DIR/src/win_app.def"],
+    "sourceFiles-x86": ["$PACKAGE_DIR/src/windows_manifest_x86.res"],
+
+    "versions": ["ForceLogs"],
+
+    "dependencies": {
+        "dlangui": "~master"
+    },
+    "configurations" : [
+        {
+            "name" : "default",
+        }, 
+        {
+            "name" : "console",
+            "subConfigurations" : {
+                "dlangui" : "console"
+            }
+        },
+        {
+            "name" : "minimal",
+            "subConfigurations" : {
+                "dlangui" : "minimal"
+            }
+        }
+    ]
+}
